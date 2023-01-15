@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+   
+}
+.logo{
+    width: 160px;
+    height:70px
+}
+.nav{
+    background-color:white;
+    position: relative;
+    height: 20%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    display:inline-block;
+    padding: 10px 40px;
+    list-style: none;
+    
+    
+    
+}
+ul li a{
+    color:orangered;
+    font-weight: 400;
+    font-size: larger;
+    text-decoration: none;
+}
+.get-connected{
+    border: 1px solid white;
+    color:white;
+    padding: 10px 30px;
+    border-radius:1em;
+    background-color: orangered;
+}
+.showcase{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    transition:5s;
+    animation-name:animate ;
+    animation-direction:alternate-reverse ;
+    animation-duration: 30s;
+    animation-fill-mode:forwards ;
+
+    animation-iteration-count:infinite ;
+    animation-play-state:running ;
+    animation-timing-function:ease-in-out ;
+
+}
+@keyframes animate{
+    0%{
+    background-image: url(images/img2.jpg);
+    }20%{
+        background-image: url(images/img3.jpeg);
+    }40%{
+        background-image: url(images/img4.jpg);
+    }60%{
+        background-image: url(images/img5.jpg);
+    }80%{
+        background-image: url(images/img6.jpg);
+    }100%{
+        background-image: url(images/img1.jpg);
+    }
+}
+.container-fluid{
+    justify-content: space-around;
+    padding-top: 5%;
+    
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.description{
+    margin-left: 20px;
+    float: left;
+   
+    color:white;
+      height:490px;
+    
+}
+.information{
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+    border-radius: 10px;
+    margin-right: 10px;
+    float: right;
+    background-color:white ;
+    height:490px;
+    width:400px;
+}
+.info{
+    font-size:75px;
+    color:orangered;
+}
+.hr{
+    color: white;
+}
+.mini-description{
+    margin-top: 60px;
+    font-size: 40px;
+
+}
+.info-items{
+    margin: 15px 10px;
+    padding: 30px 40px;
+    background-color: orangered;
+    color: white;
+    font-weight:bold;
+    font-size: 20px;
+    border-radius: 2rem;
+}
